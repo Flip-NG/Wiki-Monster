@@ -17,12 +17,12 @@ subprocess.call("pip install -r requirements.txt", shell=True)
 
 os.system('clear')
 
-text = "#!/bin/bash \n cd $HOME/wiki/ && python3 ./wiki.py"
+text = "#!/bin/bash \n cd $HOME/wiki/ && python3 ./wikit.py"
 
-with open("/usr/local/bin/wiki", "w+") as f:
+with open("/usr/local/bin/wikit", "w+") as f:
     f.write(text)
 
-files = ["/usr/local/bin/wiki", "wiki.py"]
+files = ["/usr/local/bin/wiki", "wikit.py"]
 
 for i in files:
     subprocess.call(["sudo", "chmod", "+x", i])

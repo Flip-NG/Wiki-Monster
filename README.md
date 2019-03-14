@@ -7,8 +7,11 @@ browser or leaving your terminal emunlator of choice.
 Installation:
 
 ~cd
+
 sudo git clone https://github.com/Flip-NG/wikit.git
+
 cd wikit
+
 sudo python3 ./setup.py
 
 Usage: 
@@ -18,4 +21,5 @@ Wikit
 Compatiblility:
 
 python3
+
 Tested on Arch Linux but should work on all Linux Flavors

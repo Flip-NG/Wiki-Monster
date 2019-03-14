@@ -28,4 +28,5 @@ Tested on Arch Linux but should work on all Linux Flavors
 
 Written by Flip-NG
 
-Buy me a coffee paypal.me/messerlab
+Buy me a coffee 
+https://www.paypal.me/messerlab

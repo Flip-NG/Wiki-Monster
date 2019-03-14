@@ -25,6 +25,7 @@ python3
 
 Tested on Arch Linux but should work on all Linux Flavors
 
+License GPlv3
 
 Written by Flip-NG
 

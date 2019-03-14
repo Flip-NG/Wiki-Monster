@@ -1,4 +1,21 @@
 #!/usr/bin/python3
+# WIKIT written by flip-NG
+# Copyright (C) 2018
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# importing libraries
 
 import pandas as pd
 import wikipedia as wp
@@ -7,6 +24,8 @@ import itertools
 import time
 import os
 
+
+# queries wikipedia for search string and prints summary table
 
 def wiki_search():
 
@@ -29,6 +48,8 @@ def wiki_search():
     return article
 
 
+# creats options menu and executes chosen option
+
 def more():
 
     article = wiki_search()
@@ -36,15 +57,21 @@ def more():
 
     choice = input("Enter your selection[1-3]:")
 
+# prints summary if chosen
+
     if choice == '1':
         os.system('clear')
         print(article.summary)
         new_search()
 
+# prints complete wikipedia page
+
     elif choice == '2':
         os.system('clear')
         print(article.content)
         new_search()
+
+# exits script
 
     elif choice == '3':
         os.system('clear')
@@ -52,7 +79,10 @@ def more():
 
     else:
         print("Invalid Option")
+        more()
 
+
+# draws banner to terminal
 
 def banner():
 
@@ -67,12 +97,16 @@ def banner():
 ##########################''')
 
 
+# creats spinner cursor that is executed during search
+
 def spinning_cursor():
 
     while True:
         for cursor in '|/-\\':
             yield cursor
 
+
+# executes cursor spin
 
 def spin():
 
@@ -84,6 +118,8 @@ def spin():
         time.sleep(0.1)
         sys.stdout.write('\b')
 
+
+# menu that asks to execute new search or exits script
 
 def new_search():
 
@@ -102,5 +138,6 @@ def new_search():
         time.sleep(5)
         new_search()
 
+# starts script
 
 more()

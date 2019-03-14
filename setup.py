@@ -13,7 +13,11 @@ else:
     print("Must run script as root")
     exit()
 
-subprocess.call("pip install -r requirements.txt", shell=True)
+print('Installing')
+
+file = open("log.txt", "w+")
+subprocess.call("pip install -r requirements.txt", shell=True, stdout=file)
+file.close()
 
 os.system('clear')
 
@@ -26,6 +30,8 @@ files = ["/usr/local/bin/wiki", "wikit.py"]
 
 for i in files:
     subprocess.call(["sudo", "chmod", "+x", i])
+
+os.remove("log.txt")
 
 print('DONE')
 exit()

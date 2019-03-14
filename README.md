@@ -3,7 +3,7 @@ Search Wikipedia from terminal.
 
 WIKIT is a python3 script that allows you to search and access
 tables, summaries and content from Wikipedia pages without using 
-browser or leaving your terminal emunlator of choice.
+browser or leaving your terminal emulator of choice.
 
 Installation:
 

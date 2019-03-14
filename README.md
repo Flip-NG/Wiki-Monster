@@ -24,3 +24,8 @@ Compatiblility:
 python3
 
 Tested on Arch Linux but should work on all Linux Flavors
+
+
+Written by Flip-NG
+
+Buy me a coffee paypal.me/messerlab

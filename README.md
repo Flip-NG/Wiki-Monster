@@ -1,4 +1,4 @@
-# wikit
+# Wiki-Monster
 Search Wikipedia from terminal.
 
 WIKIT is a python3 script that allows you to search and access
